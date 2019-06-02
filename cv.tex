@@ -1,0 +1,273 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Laertis \textsc{Loutsis}}\bigskip\par} % Your name
+
+\section{Personal Details}
+
+\begin{tabular}{rl}
+\textsc{Date of Birth:} & 22 April 1988 \\
+\textsc{Nationality:} & Greek \\
+\textsc{email:} & laertisloutsis@gmail.com
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl}	
+
+\textsc{Feb. 2012 - Nov. 2014} & M.Sc. in \textsc{Computer Science} \\
+& Computer Science Department, University of Crete, Greece \\
+& Major: Parallel and Distributed Systems \\
+& Minor: Computer Networks and Telecommunications \\
+& Master Thesis: \textbf{ASIST: Architectural Support for Instruction Set Randomization} \\
+& Supervisor: Prof. Evangelos P. Markatos \\
+\\
+
+\textsc{Sep. 2006 - Nov. 2011} & B.Sc. in \textsc{Computer Science} \\
+& Computer Science Department, University of Crete, Greece \\
+%& GPA: 6.95 (out of 10) \\
+& Thesis: \textbf{Analysis and Detection of Heap-Spraying Attacks} \\
+& Advisor: Prof. Evangelos P. Markatos \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	DOMESTIC WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+\begin{tabular}{rl}
+
+%\subsection{Abroad}
+
+\textsc{Mar. 2014 - Aug. 2014} & R\&D Engineer / Postgraduate Research Assistant \\
+& Systems Security Lab, Vrije University Amsterdam \\
+& - Sandbox Execution (\emph{Work in progress}) \\
+& Supervisor: Herbert Boss \\
+\\
+
+%\subsection{Domestic}
+%\begin{tabular}{rl}
+%\end{tabular}
+
+\textsc{Feb. 2012 - Nov. 2014} & R\&D Engineer / Postgraduate Research Assistant \\
+& Distributed Computing Systems Lab, FORTH-ICS \\
+& - HW \& OS support for enhanced security \\
+& - Improving \emph{Intrusion Detection Systems} by utilizing traffic locality \\
+& - Improving \emph{Low Latency Anonymity Networks} against timing \\
+&   attacks \\
+\\
+
+\textsc{Jun. 2010 - Feb. 2012} & R\&D Engineer / Undergraduate Research Assistant \\
+& Distributed Computing Systems Lab, FORTH-ICS \\
+& - Analysing and detecting \emph{Heap-Spraying} attacks \\
+& - Leveraging \emph{Detours}' trampoline functions to create memory \\
+& footprints of Windows executables\\
+\\
+
+\textsc{Jun. 2007 - Jun. 2010} & IT Systems Administrator \\
+& Tranformation Services Laboratory (TSL), Computer Science, \\
+& University of Crete \\
+& - User Administrator, System Maintainance \\
+& Supervisor: Prof. Christos Nikolau
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	TEACHING EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Teaching Experience}
+
+\begin{tabular}{rl}
+
+\textsc{Feb. 2012 - Sept. 2014} & Teaching Assistant, University of Crete \\
+& CS255 - Software Technology Laboratory \small Spring 2012, Spring 2013 \& Spring 2014 \\
+& CS252 - Object-Oriented Programming \small Fall 2013\\
+& CS120 - Digital Design \small Fall 2014
+\\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+% Honours and Awards	
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\begin{tabular}{rl}
+
+\textsc{Feb. 2012 - Nov. 2014} & Graduate Research Scholarship, \textbf{FORTH-ICS}, \\
+& Adjunct Assoc. Prof. Sotiris Ioannidis \\
+
+\textsc{Oct. 2010 - Feb. 2012} & Undergraduate Research Scholarship, \textbf{FORTH-ICS}, \\
+& Prof. Evangelos P.  Markatos \\
+
+
+\textsc{Sep. 2007 - Oct. 2010} & Student Scholarship, \textbf{TSL}, \\
+& Prof. Christos Nikolau \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	Extracurricular Activities
+%----------------------------------------------------------------------------------------
+
+\section{Conferences \& Seminars}
+
+\begin{tabular}{rl}
+
+\textsc{November 2013} & ACM Conference on Computer and Communications Security (CCS) \\
+& Berlin, Germany \\
+
+\textsc{June 2013} & \textbf{TRANSFORM Summer School} \\
+& on Research Directions in Distributed Computing \\
+
+\textsc{June 2011} & 4th Summer School on Network \& Information Security \\
+& \textbf{The Challenge of the Changing Risk Landscape} \\
+& \small Jointly organized by ENISA and FORTH \\
+
+\textsc{June 2007} & First International Workshop and Summer School On \\
+& \emph{Service Science, Management \& Engineering}
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	External Service
+%----------------------------------------------------------------------------------------
+
+\section{External Service}
+
+\begin{tabular}{rl}
+
+\textsc{External} & 15th IEEE Global Internet Symposium; 17th International Conference on \\
+\textsc{Reviewer} & Architectural Support for Programming Languages and Operating Systems '12 \\
+& (ASPLOS); 1st SysSec Workshop; 16th International IEEE Symposium on \\
+& Computers and Telecommunications '11 (ISCC); 18th International Conference \\
+& on Telecommunications '11 (ICT); 15th International Conference on Financial \\
+& Cryptography and Data Security '11 (IFCA) \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\begin{tabular}{rl}
+
+& Antonis Papadogiannakis, \emph{Laertis Loutsis}, Vassilis Papaefstathiou, Sotiris Ioannidis \\
+& \textbf{ASIST: Architectural Support for Instruction Set Randomization}. In Proceedings of the \\
+&  ACM Conference on Computer and Communications Security (CCS). November 2013, \\
+& Berlin, Germany. \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Techinical Skills}
+
+\begin{tabular}{rl}
+\textsc{Operating Systems} & \emph{Linux Kernel} development \\
+
+\textsc{Platforms} & \emph{FPGA Development} \\
+
+\textsc{Programming Languages} & C/C++, Java, Matlab, Actionscript \\
+\textsc{HDLs} & VHDL, Verilog \\
+\textsc{Scripting Languages} & UNIX shell/Bash, Perl, Python, Ruby \\
+\textsc{Web/Markup Languages} & HTML, Javascipt, PHP, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}\\
+\textsc{RDBMS} & SQL, MySQL \\
+
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rl}
+
+\textsc{English:} & Cambridge Certificate of Proficiency in English (\textbf{CPE}) \\
+& Michigan Certificate of Proficiency in English (\textbf{ECPE}) \\
+
+\textsc{Greek:} & Native \\
+
+\textsc{French:} & Basic Knowledge\\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	MILITARY SERVICE
+%----------------------------------------------------------------------------------------
+
+\section{Military Service}
+
+\begin{tabular}{rl}
+
+\textsc{Full Service:} & Nov. 2014 - Aug. 2015
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\section{References}
+
+\begin{tabular}{rl}
+
+& Prof. Evangelos Markatos, FORTH-ICS (markatos@ics.forth.gr) \\
+& Adjunct Assoc. Prof. Sotiris Ioannidis, FORTH-ICS (sotiris@ics.forth.gr) \\
+
+\end{tabular}
+\end{document}
